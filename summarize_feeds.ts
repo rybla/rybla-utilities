@@ -150,7 +150,7 @@ export async function extractArticleContent(item: RssItem): Promise<string> {
     );
 
     return markdown;
-  } catch (error) {
+  } catch (error: any) {
     throw new Error(
       `Error extracting article content for "${item.title}" from ${item.link}: ${error.message}`,
     );
