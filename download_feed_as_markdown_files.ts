@@ -192,7 +192,7 @@ function getDates(daysAgo: number): Dates {
   startDate.setDate(endDate.getDate() - daysAgo);
 
   const formatDate = (date: Date): string => {
-    return date.toISOString().split("T")[0];
+    return date.toISOString().split("T")[0]!;
   };
 
   return {
