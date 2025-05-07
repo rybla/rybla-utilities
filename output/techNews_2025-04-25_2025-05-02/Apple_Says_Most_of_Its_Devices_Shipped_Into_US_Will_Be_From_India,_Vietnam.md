@@ -1,0 +1,7 @@
+# Apple Says Most of Its Devices Shipped Into US Will Be From India, Vietnam
+
+Apple said a majority of its devices shipped into the U.S. in the June quarter will [originate in India and Vietnam](https://www.msn.com/en-us/money/companies/apple-says-most-of-its-devices-shipped-into-us-will-be-from-india-vietnam/ar-AA1E0xHo), a move to allay investor concerns about the impact of tariffs on its operations. From a report: _The company was among the hardest-hit of the tech giants last month because of its exposure to China, a primary target of the Trump administration's global tariff pressure. Most of Apple's devices are assembled in the country, and investors are closely watching its efforts to shift final assembly of devices bound for the U.S. to India and other countries._
+
+_Chief Executive Tim Cook said the impact in the June quarter from tariffs, assuming existing policies remain in place, would add $900 million to Apple's costs, a figure he suggested could be worse in future quarters. He also said that there was limited impact from tariffs in March. \[...\] He added that Apple would continue to diversify its supply chain away from China. "What we learned some time ago was that having everything in one location had too much risk with it," he said._
+
+**Further reading**: [JPMorgan Says India-Assembled iPhone Within Spitting Distance of China Price](https://indiadispatch.com/p/jpmorgan-cost-model-finds-india-assembled).

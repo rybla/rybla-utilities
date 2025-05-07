@@ -1,0 +1,7 @@
+# Scientists Discover Massive Molecular Cloud Close To Earth
+
+An invisible molecular cloud that could shed light on how stars and planets form [has been detected](https://edition.cnn.com/2025/04/28/science/molecular-cloud-discovery) surprisingly close to Earth. From a report: _Named Eos after the Greek goddess of the dawn, the cloud of gas would appear huge in the night sky if visible to the naked eye. It measures roughly 40 moons in width and has a weight about 3,400 times the mass of the sun, researchers [reported in a study](https://www.nature.com/articles/s41550-025-02541-7) published Monday in the journal Nature Astronomy._
+
+_"In astronomy, seeing the previously unseen usually means peering deeper with ever more sensitive telescopes -- detecting those smaller planets ... those more distant galaxies," said study coauthor Thomas Haworth, an astrophysicist at Queen Mary University of London. "This thing was pretty much in our cosmic backyard, and we've just missed it," he added. Molecular clouds are composed of gas and dust from which hydrogen and carbon monoxide molecules can form. Dense clumps within these clouds can collapse to form young stars._
+
+The article clarifies that Eos is 300 light-years away, which to be sure, is closer than any of the molecular clouds that we've known about previously.

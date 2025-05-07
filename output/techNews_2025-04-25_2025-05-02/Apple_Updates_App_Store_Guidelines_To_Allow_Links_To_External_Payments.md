@@ -1,0 +1,12 @@
+# Apple Updates App Store Guidelines To Allow Links To External Payments
+
+Apple has [updated](https://developer.apple.com/app-store/review/guidelines/) its App Store Guidelines to comply with a [court order](https://apple.slashdot.org/story/25/05/01/055227/apple-must-halt-non-app-store-sales-commissions-judge-says) from the Epic Games lawsuit, now [allowing U.S. apps to include external payment links and buttons](https://9to5mac.com/2025/05/01/apple-app-store-guidelines-external-links/) without needing special approval. "The App Review Guidelines have been updated for compliance with a United States court decision regarding buttons, external links, and other calls to action in apps. These changes affect apps distributed on the United States storefront of the App Store," Apple said in an email to developers on Thursday night. 9to5Mac reports: _Here are the full changes to the App Store Guidelines with today's revisions:_
+
+_3.1.1: Apps on the United States storefront are not prohibited from including buttons, external links, or other calls to action when allowing users to browse NFT collections owned by others.  
+3.1.1(a): On the United States storefront, there is no prohibition on an app including buttons, external links, or other calls to action, and no entitlement is required to do so.  
+3.1.3: The prohibition on encouraging users to use a purchasing method other than in-app purchase does not apply on the United States storefront.  
+3.1.3(a): The External Link Account entitlement is not required for apps on the United States storefront to include buttons, external links, or other calls to action._
+
+"We strongly disagree with the decision. We will comply with the court's order and we will appeal," Apple said in a statement to 9to5Mac yesterday.
+
+[Spotify](https://apple.slashdot.org/story/25/05/01/2319213/spotify-moves-to-bypass-apple-payments-after-landmark-ruling), [Patreon](https://news.slashdot.org/story/25/05/01/2030224/patreon-will-update-its-iphone-app-to-sidestep-apples-payment-system), [Epic Games](https://games.slashdot.org/story/25/05/01/2014239/epic-games-is-launching-webshops-to-circumvent-app-store-fees) and others are already working to circumvent Apple's App Store fees.

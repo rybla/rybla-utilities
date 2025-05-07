@@ -1,0 +1,5 @@
+# Microsoft Makes New Accounts Passwordless by Default
+
+Microsoft has taken its most significant step yet toward eliminating passwords by making new Microsoft accounts "passwordless by default." The change means new users will [never need to create a password](https://www.microsoft.com/en-us/security/blog/2025/05/01/pushing-passkeys-forward-microsofts-latest-updates-for-simpler-safer-sign-ins/), instead using more secure authentication methods like biometrics, PINs, or security keys.
+
+The move builds on Microsoft's decade-long push toward passwordless authentication that began with Windows Hello in 2015. According to company data, passkey sign-ins are eight times faster than password and multi-factor authentication combinations, with users achieving a 98% success rate compared to just 32% for password users. Microsoft also said it now registers nearly one million passkeys daily across its consumer services.

@@ -1,0 +1,5 @@
+# Solar Panels To Be Fitted On All New-Build Homes in England By 2027
+
+Almost all new homes in England will be [fitted with solar panels during construction within two years](https://www.theguardian.com/environment/2025/may/01/solar-panels-fitted-all-new-build-homes-england-by-2027), the UK government will announce after Keir Starmer rejected Tony Blair's criticism of net zero policies. From a report: _Housebuilders will be legally required to install solar panels on the roofs of new properties by 2027 under the plans. The policy is estimated to add between $4,000 and $5,320 to building a home but homeowners would save more than $1,331 on their annual energy bills, according to the Times._
+
+_Labour has set a target of building 1.5m homes by the end of the parliament. The party has promised to decarbonise the electricity grid by 2030 and cut household energy bills by $400 a year._

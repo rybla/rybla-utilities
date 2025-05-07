@@ -1,0 +1,5 @@
+# US Approves CRISPR Pigs For Food
+
+The FDA has [approved gene-edited pigs for human consumption](https://www.technologyreview.com/2025/05/02/1116059/the-us-approves-crispr-pigs-for-food/), potentially marking the first major commercial application of CRISPR technology in the food chain. Created by British company Genus, these pigs have had their DNA modified to remove the receptor that the porcine reproductive and respiratory syndrome (PRRS) virus uses to enter cells, rendering them immune to 99% of known virus variants.
+
+PRRS causes losses of approximately $300 million annually in the US alone by killing piglets and spreading rapidly through factory farms. According to Matt Culbertson, chief operating officer of Genus subsidiary Pig Improvement Company, the gene-edited pork could reach US markets sometime next year. Before launching sales to pig farms, Genus must secure regulatory approval in key export markets including Mexico, Canada, Japan, and China.

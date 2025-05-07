@@ -1,0 +1,5 @@
+# Pinterest Users Left Confused By Mass Account Suspensions
+
+An anonymous reader shares a report: _Pinterest is having some weird moderation issues. Reports of sweeping [pin removals and account suspensions have appeared](https://www.theverge.com/news/660070/pinterest-mass-account-suspensions) across social media platforms like Instagram, TikTok, and X, with many users saying they received no warning or explanation about the ban before being locked out of their accounts._
+
+_The r/Pinterest subreddit is also currently dominated by posts from confused users who claim their accounts have been suspended without evidence explaining how they violated the platform's guidelines. Users are also reporting they're experiencing an unusually high quantity of pins being deleted by Pinterest with absurd explanations, such as quilting magazines, cross-stitch art, and Minecraft bunk bed builds all being flagged for "adult content."_
