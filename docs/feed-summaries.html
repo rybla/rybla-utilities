@@ -1,0 +1,172 @@
+<!doctype html>
+<html>
+    <body>
+        <div class="main">
+            <div class="control">
+                <select
+                    id="select_summary"
+                    onchange="onchange_select_summary(event)"
+                >
+                    <option selected>select a summary</option>
+                </select>
+            </div>
+            <div id="content_summary"></div>
+        </div>
+    </body>
+    <head>
+        <meta charset="UTF-8" />
+        <title>rybla-utilities | feed-summaries</title>
+
+        <script>
+            async function main() {
+                const select_summary =
+                    document.getElementById("select_summary");
+
+                const response_all = await fetch("./feed_summaries/all");
+                const text_all = await response_all.text();
+                for (const summary_name of text_all.split("\n")) {
+                    if (summary_name === "") continue;
+
+                    const option_summary = document.createElement("option");
+                    option_summary.value = summary_name;
+                    option_summary.innerText = summary_name;
+                    select_summary.appendChild(option_summary);
+                }
+            }
+
+            async function set_content_summary(summary_name) {
+                if (!summary_name) return;
+
+                const response_summary = await fetch(
+                    `./feed_summaries/${summary_name}`,
+                );
+                const data_summary = await response_summary.json();
+
+                const content_summary =
+                    document.getElementById("content_summary");
+                content_summary.innerHTML = "";
+
+                for (const item of data_summary) {
+                    const content_item = document.createElement("a");
+                    content_item.classList.add("content_item");
+                    content_item.href = item.link;
+                    content_item.innerHTML = `
+                      <div class="title">${item.title ?? "untitled"}</div>
+                      <div class="summary">${item.summary}</div>
+                    `.trim();
+                    content_summary.appendChild(content_item);
+                }
+            }
+
+            function onchange_select_summary(event) {
+                set_content_summary(event.target.value);
+            }
+
+            main();
+        </script>
+
+        <style>
+            html,
+            body {
+                margin: 0;
+                padding: 0;
+            }
+            .main {
+                margin: auto;
+                padding: 1em;
+                max-width: 600px;
+
+                display: flex;
+                flex-direction: column;
+                gap: 1em;
+            }
+
+            .control {
+                /* Basic styling */
+                select {
+                    padding: 10px 15px;
+                    border: 1px solid #ccc;
+                    border-radius: 8px; /* Rounded corners */
+                    font-size: 1rem;
+                    color: #333;
+                    background-color: #fff;
+                    cursor: pointer;
+                    outline: none; /* Remove default outline */
+                    appearance: none; /* Remove default arrow */
+                    -webkit-appearance: none; /* Remove default arrow for Chrome/Safari */
+                    -moz-appearance: none; /* Remove default arrow for Firefox */
+                    transition:
+                        border-color 0.3s ease,
+                        box-shadow 0.3s ease;
+                }
+
+                /* Focus styles */
+                select:focus {
+                    border-color: #007bff; /* Highlight border on focus */
+                    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Add a subtle shadow */
+                }
+
+                /* Optional: Add a custom arrow using a pseudo-element */
+                /* This requires wrapping the select in a container or using a background image */
+                /* Simple example using background image for a custom arrow */
+                /* Note: This might conflict with background-color, consider a wrapper div */
+                select {
+                    background-image: url('data:image/svg+xml;utf8,<svg fill="%23333333" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/><path d="M0 0h24v24H0z" fill="none"/></svg>');
+                    background-repeat: no-repeat;
+                    background-position: right 10px center;
+                    background-size: 16px;
+                    padding-right: 35px; /* Make space for the custom arrow */
+                }
+
+                /* Style for the default selected option */
+                select option:first-child {
+                    color: #666; /* Dim the default option */
+                }
+
+                /* Style for regular options */
+                select option {
+                    padding: 10px; /* Add padding to options */
+                }
+            }
+
+            #content_summary {
+                display: flex;
+                flex-direction: column;
+                gap: 1em;
+
+                & > .content_item {
+                    padding: 0.5em;
+                    font-style: normal;
+                    text-decoration: none;
+
+                    &:visited {
+                        background: purple;
+                    }
+
+                    &:focus {
+                    }
+
+                    &:hover {
+                        box-shadow: 0 0 0 0.2em black;
+                    }
+
+                    &:active {
+                    }
+
+                    display: flex;
+                    flex-direction: column;
+
+                    & > .title {
+                        font-weight: bold;
+                    }
+
+                    & > .summary {
+                        padding-top: 1em;
+                        padding-left: 1em;
+                        padding-bottom: 1em;
+                    }
+                }
+            }
+        </style>
+    </head>
+</html>

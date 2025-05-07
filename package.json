@@ -7,12 +7,13 @@
     "apple_add_reminder": "./apple_add_reminder.ts"
   },
   "devDependencies": {
-    "@types/bun": "latest",
     "@types/axios": "^0.14.4",
+    "@types/bun": "latest",
     "@types/jsdom": "^21.1.7",
     "@types/sanitize-filename": "^1.6.3",
     "@types/turndown": "^5.0.5",
-    "@types/xml2js": "^0.4.14"
+    "@types/xml2js": "^0.4.14",
+    "http-server": "^14.1.1"
   },
   "peerDependencies": {
     "typescript": "^5"
