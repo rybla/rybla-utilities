@@ -1,7 +1,0 @@
-# I am not the only one writing for the AIs
-
-> A Moscow-based disinformation network named “Pravda” — the Russian word for “truth” —  is pursuing an ambitious strategy by deliberately infiltrating the retrieved data of artificial intelligence chatbots, publishing false claims and propaganda for the purpose of affecting the responses of AI models on topics in the news rather than by targeting human readers, NewsGuard has confirmed.  By flooding search results and web crawlers with pro-Kremlin falsehoods, the network is distorting how large language models process and present news and information. The result: Massive amounts of Russian propaganda — 3,600,000 articles in 2024 —  are now incorporated in the outputs of Western AI systems, infecting their responses with false claims and propaganda.
-> 
-> This infection of Western chatbots was foreshadowed in a talk American fugitive turned Moscow based propagandist John Mark Dougan gave in Moscow last January at a conference of Russian officials, when he told them, “By pushing these Russian narratives from the Russian perspective, we can actually change worldwide AI.”
-
-Here is [the full story](https://www.newsguardtech.com/special-reports/moscow-based-global-news-network-infected-western-artificial-intelligence-russian-propaganda/), via uair01.
