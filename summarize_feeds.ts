@@ -163,10 +163,23 @@ async function summarizeArticle(item: RssItem): Promise<string> {
   const model = ai.getGenerativeModel({ model: "gemini-2.0-flash-lite" });
   const result = await model.generateContent({
     systemInstruction:
-      "The user will provide an article in Markdown format. Reply with a very concise summary, in Markdown format, that captures the main points of the article. Make sure to reply with ONLY the summary.",
+      "The user will provide a the content of an article. You must reply with a single sentence that summarizes the main points of the article.",
     contents: [{ role: "user", parts: [{ text: content }] }],
+    generationConfig: {
+      responseMimeType: "application/json",
+      responseSchema: {
+        type: google.SchemaType.OBJECT,
+        properties: {
+          summary: {
+            type: google.SchemaType.STRING,
+            description: "A summary of the article. Must be a single sentence.",
+          },
+        },
+        required: ["summary"],
+      },
+    },
   });
-  const summary = result.response.text();
+  const { summary } = JSON.parse(result.response.text());
   return summary;
 }
 
@@ -175,16 +188,13 @@ async function summarizeFeed(feed_filepath: string): Promise<string[]> {
   const article_urls = await Promise.all(feed_urls.map(extractRssItems)).then(
     concat,
   );
+  const article_summaries: string[] = [];
   for (const article_url of article_urls) {
     const summary = await summarizeArticle(article_url);
     console.log(`Successfully summarized article: "${article_url.title}"`);
-    return [summary];
+    article_summaries.push(summary);
   }
-  return []; // TODO
-}
-
-function concat<A>(xss: A[][]): A[] {
-  return xss.reduce((acc, arr) => acc.concat(arr), [] as A[]);
+  return [];
 }
 
 (async () => {
@@ -193,3 +203,7 @@ function concat<A>(xss: A[][]): A[] {
   });
   console.log(`summary:\n${summary}`);
 })();
+
+function concat<A>(xss: A[][]): A[] {
+  return xss.reduce((acc, arr) => acc.concat(arr), [] as A[]);
+}
